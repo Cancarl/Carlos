@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/main.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Parts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <!-- <script src="./js/script.js"></script> -->
+</head>
+<body>
+  <header class="header">
+    <div id="menu-btn" class="fas far-bars"></div>
+    <a href="#" class="logo"><span>Car</span>Parts</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#parts">Parts</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="login-btn">
+      <button class="btn">Login</button>
+      <i id="far fa-user"></i>
+    </div>
+  </header>
+  <div class="login-form-container">
+    <span class="fas fa-times" id="close-login-form"></span>
+    <form action="">
+      <h3>user login</h3>
+      <input type="email" placeholder="email" class="box">
+      <input type="password" placeholder="password" class="box">
+      <p> Forgot Your Password <a href="#">Click Here</a></p>
+      <input type="submit" value="login now" class="btn">
+      <p>or login with</p>
+      <div class="buttons">
+        <a href="#" class="btn">Google</a>
+      </div>
+      <p>Don't have an account?<a href="#">Create one</a></p>
+    </form>
+  </div>
+  <section class="home" id="home">
+    <h1 class="home-parallax" data-speed="-2">Find your parts</h1>
+    <img src="./img/Auto-Parts.png" alt="" class="home-parallax" data-speed="5">
+    <a href="#" class="btn home-parallax" data-speed="7">Explore Parts</a>
+  </section>
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi. <br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+  
+  <section class="icons-container">
+    <div class="icons">
+      <i class="fas fa-home"></i>
+        <div class="content">
+          <h3>1+</h3>
+          <p>branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+     <i class="fas fa-money-bill-wave"></i>
+        <div class="content">
+          <h3>4</h3>
+          <p>Parts on Sale</p>
+       </div>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-users"></i>
+        <div class="content">
+          <h3>1+</h3>
+          <p>Happy Clients</p>
+        </div>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>50+</h3>
+          <p>Parts Available</p>
+        </div>
+    </div>
+
+  </section>
+ 
+  <section class="parts" id="parts">
+    <h1 class="heading">Big <span>Sale</span></h1>
+    <div class="swiper parts-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="./img/BMW-B58 Engine.jpg" alt="">
+          <div class="content">
+            <h3>Engine</h3>
+            <div class="price"><span>Price: </span> $4000 </div>
+            <p>
+              new
+              <span class="fas fa-circle"></span> 2016
+              <span class="fas fa-circle"></span> B58 BMW Engine
+              <span class="fas fa-circle"></span> 300+lbs
+            </p>
+            <a href="#" class="btn">Check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/BMW-B58 Engine 2.jpg" alt="">
+          <div class="content">
+            <h3>Engine</h3>
+            <div class="price"><span>Price: </span> $9200 </div>
+            <p>
+              new
+              <span class="fas fa-circle"></span> 2022
+              <span class="fas fa-circle"></span> B58TU BMW Engine
+              <span class="fas fa-circle"></span> 300+lbs
+            </p>
+            <a href="#" class="btn">Check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/BMW-Brake Kit.jpg" alt="">
+          <div class="content">
+            <h3>Brakes</h3>
+            <div class="price"><span>Price: </span> $1600 </div>
+            <p>
+              new
+              <span class="fas fa-circle"></span> 2024
+              <span class="fas fa-circle"></span> Wilwood Forged Superlite 6R Brake Kit
+              <span class="fas fa-circle"></span> 40+lbs
+            </p>
+            <a href="#" class="btn">Check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./img/Oil Filter 330i.jpg" alt="">
+          <div class="content">
+            <h3>Oil Filter</h3>
+            <div class="price"><span>Price: </span> $8.50 </div>
+            <p>
+              new
+              <span class="fas fa-circle"></span> 2024
+              <span class="fas fa-circle"></span> STP Extended Life Oil Filter
+              <span class="fas fa-circle"></span> 1+lbs
+            </p>
+            <a href="#" class="btn">Check out</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h1 class="heading">our <span>services</span></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Parts selling</h3>
+        <p></p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-tools"></i>
+        <h3>Parts repair</h3>
+        <p></p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-car-crash"></i>
+        <h3>Parts insurance</h3>
+        <p></p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-car-battery"></i>
+        <h3>Car Battery Exchange</h3>
+        <p></p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-headset"></i>
+        <h3>Online Support</h3>
+        <p></p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span>us</h1>
+
+    <div class="row">
+      <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1lZ5SD7rITLaK3q4cdNudTE4YIgA&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+      <form action="">
+        <h3>Contacts Us</h3>
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="number" placeholder="number" class="box">
+        <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+      </form>
+    
+    </div>
+  </section>
+  
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Our Branch</h3>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>Providence, Rhode Island</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Link</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>parts</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>services</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Link</h3>
+        <a href="#"><i class="fas fa-phone"></i>1(234)567-8912</a>
+        <a href="#"><i class="fas fa-envelope"></i>CCanales01@wildcats.jwu.edu</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Providence, RI 02903</a>
+      </div>
+    </div>
+
+    <div class="credit"> Created by Carlos Canales</div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
